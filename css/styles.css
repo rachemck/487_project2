@@ -1,0 +1,196 @@
+#facts-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr );
+  grid-template-rows: 5% repeat(2, 240px );
+  grid-gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+#facts-header{
+  grid-column: 1/4;
+  grid-row: 1/2;
+  color: black
+}
+
+#recommend{
+  grid-column: 1/2;
+  grid-row: 2/3;
+
+}
+
+.front img{
+align-self: center;
+
+}
+
+
+.front{
+  background-color: rgba(193, 39, 45);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.back{
+  background-color: grey;
+}
+
+#award{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+#fill-1{
+  grid-column: 3/4;
+  grid-row:2/3;
+}
+
+#fill-2{
+  grid-column: 1/2;
+  grid-row:3/4;
+}
+
+#fill-3{
+  grid-column: 2/3;
+  grid-row:3/4;
+}
+
+#fill-4{
+  grid-column: 3/4;
+  grid-row:3/4;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 25px;
+  width: 80%;
+  background: grey;
+  color: white;
+
+}
+
+.slick-slide {
+  text-align: center;
+  background: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+#slide-1{
+  background-image: url(../img/homepage.png);
+  background-size: cover;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  height: 330px;
+}
+
+#slide-2{
+  background-image: url(../img/couch.png);
+  background-size: cover;
+  position: relative;
+}
+
+#block-2{
+  float: right;
+  background-color: rgba(193, 39, 45, .8);
+  width: 39%;
+  padding: 16% 3% 16% 3%;
+  text-align: left;
+}
+
+#slide-3{
+  background-image: url(../img/mail.png);
+  background-size: cover;
+  position: relative;
+}
+
+#block-3{
+  float: left;
+  background-color: rgba(0, 0, 0, .6);
+  width: 33%;
+  padding: 13% 3% 13% 3%;
+  text-align: left;
+}
+
+.large-text{
+  font-size: 135%;
+}
+
+#logo{
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+@media screen and (max-width:700px){
+  #block-2{
+    padding:0px;
+    width: 100%;
+    font-size: 12px;
+    height: 100%;
+    margin-top: 250px;
+  }
+
+  #slide-1{
+    height: 410px;
+  }
+
+  #slide-3{
+    height: 450px;
+    object-fit: cover;
+    object-position: 100% 0;
+    background-image: url(../img/mail-small.png);
+  }
+
+  #block-3{
+    padding:0px;
+    width: 100%;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, .8);
+    margin-top: 260px;
+  }
+  #facts-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 130px );
+    grid-template-rows: 3% repeat(3, 140px );
+    font-size: 14px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    grid-gap: 6px;
+  }
+
+    #recommend{
+      grid-column: 1/2;
+      grid-row: 2/3;
+
+    }
+
+    #award{
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+
+    #fill-1{
+      grid-column: 1/2;
+      grid-row:3/4;
+    }
+
+    #fill-2{
+      grid-column: 2/3;
+      grid-row:3/4;
+    }
+
+    #fill-3{
+      grid-column: 1/2;
+      grid-row:4/5;
+    }
+
+    #fill-4{
+      grid-column: 2/3;
+      grid-row:4/5;
+    }
+}
