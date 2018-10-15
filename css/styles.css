@@ -1,10 +1,27 @@
+/*link settings*/
+a:link{
+  color: black;
+}
+
+a:visited{
+  color: grey;
+}
+
+a:hover{
+  color:red;
+}
+
+#quiz-header h1{
+  color: rgba(193, 39, 45);
+}
 #slide-7{
   height: 650px;
 }
+/*grid layout for binge watching slide*/
 #binge-grid{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 40px, 1fr );
+  grid-template-rows: 100px, 1fr );
 }
 
 #binge-graph{
@@ -12,14 +29,21 @@
   grid-row: 1/2;
   background-image: url(../img/asset.jpg);
   background-size: 100% auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
 }
 
 #binge-text{
   grid-column: 1/2;
   grid-row: 2/3;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
+/*grid layout for card deck*/
 #facts-grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr );
@@ -33,7 +57,8 @@
 #facts-header{
   grid-column: 1/4;
   grid-row: 1/2;
-  color: black
+  color: black;
+  font-size: 30px;
 }
 
 #recommend{
@@ -45,14 +70,14 @@
 align-self: center;
 
 }
-
+/*toggle between cord cutter image*/
 .edit-button{
   display: block;
     margin-left: auto;
     margin-right: auto;
 
 }
-
+/*width on cord cutter image*/
 .tv{
   width: 650px;
   margin: 0 auto;
@@ -110,7 +135,7 @@ align-self: center;
   grid-column: 2/3;
   grid-row: 2/3;
 }
-
+/*grid cells for card deck*/
 #fill-1{
   grid-column: 3/4;
   grid-row:2/3;
@@ -130,7 +155,7 @@ align-self: center;
   grid-column: 3/4;
   grid-row:3/4;
 }
-
+/*holds entire slider*/
 .container {
   margin: 0 auto;
   padding: 25px;
@@ -138,7 +163,7 @@ align-self: center;
   background: grey;
   color: white;
 }
-
+/*grid for cord cutters slide*/
 #cord-grid{
   display: grid;
 }
@@ -204,7 +229,7 @@ align-self: center;
   margin-left: auto;
   margin-right: auto
 }
-
+/*media query for mobile*/
 @media screen and (max-width:700px){
   #block-2{
     padding:0px;
@@ -212,6 +237,14 @@ align-self: center;
     font-size: 12px;
     height: 100%;
     margin-top: 250px;
+  }
+
+  #binge-text{
+    padding: 5px;
+  }
+
+  #facts-header{
+    font-size: 17px;
   }
 
   .tv{
@@ -250,7 +283,7 @@ align-self: center;
     padding-left: 3px;
     padding-right: 3px;
     padding-bottom: 3px;
-    grid-gap: 4px;
+    grid-gap: 8px;
   }
 
   .back{
