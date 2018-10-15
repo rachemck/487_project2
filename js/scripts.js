@@ -3,9 +3,10 @@ $(document).ready(function(){
 
   $('.single-item').slick({
     dots: true,
-    //adaptiveHeight: true,
+    adaptiveHeight: true,
 
   });
+
 
   $("#recommend").flip();
   $(".card").flip();
@@ -25,49 +26,47 @@ $('.ok-button').hide();
           counterFormat: 'Question %current of %total',
           questions: [
             {
-              'q': 'Is jQuery required for this plugin?',
+              'q': 'What is a cord never?',
               'options': [
-                'Yes',
-                'No',
-                'Why'
+                'That annoying friend who never brings their phone charger',
+                'Someone who has never paid for cable or satellite TV service',
+                'An anti-leash dog owner who lets their dog roam free'
+              ],
+              'correctIndex': 1,
+              'correctResponse': 'Good job, that was obvious.',
+              'incorrectResponse': 'Did you even think about it?'
+            },
+            {
+              'q': 'How many awards has Netflix been nominated for?',
+              'options': [
+                '430',
+                '320',
+                '245'
               ],
               'correctIndex': 0,
-              'correctResponse': 'Good job, that was obvious.',
-              'incorrectResponse': 'Well, if you don\'t include it, your quiz won\'t work'
+              'correctResponse': 'Correct! How did you remember that?',
+              'incorrectResponse': 'Sorry, that was a tough one'
             },
             {
-              'q': 'How do you use it?',
-              'options': [
-                'Include jQuery, that\'s it!',
-                'Include jQuery and the plugin javascript.',
-                'Include jQuery, the plugin javascript, the optional plugin css, required markup, and the javascript configuration.'
-              ],
-              'correctIndex': 2,
-              'correctResponse': 'Correct! Sounds more complicated than it really is.',
-              'incorrectResponse': 'Come on, it\'s not that easy!'
-            },
-            {
-              'q': 'The plugin can be configured to require a perfect score.',
+              'q': 'Streaming services like Netflix have become an affordable alternative to cable packages',
               'options': [
                 'True',
                 'False'
               ],
               'correctIndex': 0,
-              'correctResponse': 'You\'re a genius! You just set allowIncorrect to true.',
-              'incorrectResponse': 'Why you have no faith!? Just set allowIncorrect to true.'
+              'correctResponse': 'You\'re a genius! Just kidding, that was an easy question',
+              'incorrectResponse': 'I am starting to worry that you haven\'t learned anything!'
             },
             {
-              'q': 'How do you specify the questions and answers?',
+              'q': 'Which of the following is a scientific reason why binge-watching is so addicting?',
               'options': [
-                'MySQL database',
-                'In the HTML',
-                'In the javascript configuration'
+                'I have no life',
+                'Dopamine',
+                'I have no friends'
               ],
-              'correctIndex': 2,
-              'correctResponse': 'Correct! Refer to the documentation for the structure.',
-              'incorrectResponse': 'Wrong! Do it in the javascript configuration. You might need to read the documentation.'
+              'correctIndex': 1,
+              'correctResponse': 'Correct! Look at you go!',
+              'incorrectResponse': 'Wrong! Maybe try making some friends though?'
             }
           ]
         });
-
-        

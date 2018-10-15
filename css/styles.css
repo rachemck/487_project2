@@ -1,20 +1,23 @@
+#slide-7{
+  height: 650px;
+}
 #binge-grid{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr );
+  grid-template-rows: 40px, 1fr );
 }
 
 #binge-graph{
   grid-column: 1/2;
-  grid-row: 2/3;
+  grid-row: 1/2;
   background-image: url(../img/asset.jpg);
-  background-size: cover;
-  
+  background-size: 100% auto;
+
 }
 
 #binge-text{
   grid-column: 1/2;
-  grid-row: 1/2;
+  grid-row: 2/3;
 }
 
 #facts-grid{
